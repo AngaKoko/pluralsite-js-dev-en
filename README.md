@@ -21,3 +21,10 @@ Open new terminal and run local turnnel:
 
     lt --port 3000
 
+# Authomation
+
+update the `package.json` file to be able to run app with `npm start`
+
+    "scripts": {
+        "start": "node buildScripts/srcServer.js"
+    }
