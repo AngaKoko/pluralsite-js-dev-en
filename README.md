@@ -26,5 +26,9 @@ Open new terminal and run local turnnel:
 update the `package.json` file to be able to run app with `npm start`
 
     "scripts": {
-        "start": "node buildScripts/srcServer.js"
+        "prestart": "node buildScripts/startMessage.js",
+        "start": "npm-run-all --parallel open:src",
+        "open:src": "node buildScripts/srcServer.js",
+        "security-check": "nsp check",
+        "share": "lt --port 3000"
     }
