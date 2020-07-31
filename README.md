@@ -32,3 +32,13 @@ update the `package.json` file to be able to run app with `npm start`
         "security-check": "nsp check",
         "share": "lt --port 3000"
     }
+
+# Configure Babel
+Create file `.babelrc`
+add code: 
+
+  {
+    "presents":[
+      "latest"
+    ]
+  }
